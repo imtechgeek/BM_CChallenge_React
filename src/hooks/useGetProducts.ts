@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+export type Products = typeof productsData
+export type MoreProducts = typeof productsData.edges
+
 
 const productsData ={
 	"edges": [{
@@ -7239,7 +7242,7 @@ function useGetProducts() {
           }
         | {
               loading: false;
-              data: typeof productsData;
+              data: Products;
           }
     >({
         loading: true,
