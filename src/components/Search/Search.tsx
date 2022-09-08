@@ -1,4 +1,4 @@
-import { ChangeEvent, ChangeEventHandler } from "react";
+import { ChangeEventHandler } from "react";
 import styles from "./Search.module.css";
 
 interface Props {
