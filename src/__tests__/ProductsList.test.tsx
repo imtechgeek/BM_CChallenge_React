@@ -15,7 +15,7 @@ describe("ProductsList", () => {
 
     it("should render element with correct price", () => {
         render(<ProductsList products={mockedData.edges} />);
-        const priceElement = screen.getByText(/1.59 €/);
+        const priceElement = screen.getByText('1,59 €');
         expect(priceElement).toBeInTheDocument;
     });
 
